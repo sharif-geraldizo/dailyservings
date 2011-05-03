@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DGenn Messages Inbox</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.5.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_700.font.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body id="tab1">
+<div id="white-bg">
+    <div class="bg2">
+        <div class="wrapper">
+            <div id="main-header">
+                <h1><a href="home.html" title="Home"><img src="images/dgenn_logo.png" alt="Dgenn" /></a></h1>
+                <div id="geo-location">
+                    <div class="geo-txt">
+                        <ul id="switch">
+                            <li>Switch Profile</li>
+                            <li class="profile-enabled aCenter"><a href="#"><img src="images/alter-ego-sm.png" alt="" /></a><br />Alter Ego</li>
+                            <li class="profile-disabled aCenter"><a href="#"><img src="images/ego-sm.png" alt="" /></a><br />Ego</li>
+                        </ul>
+                        <div class="clr"></div>
+                    </div>
+                </div><!-- geo-location -->
+                <ul id="main-nav">
+                    <li id="home"><a href="home.html"><span>Home</span></a></li>
+                    <li id="profile"><a href="profile.html"><span>Profile</span></a></li>
+                    <li id="photos"><a href="photos.html"><span>Photos</span></a></li>
+                    <li id="entourage"><a href="entourage.html"><span>Entourage</span></a>
+                        <ul class="sub">
+                            <li><a href="entourage-new.html">New Group</a></li>
+                            <li><a href="entourage-mygroup.html">My Group</a></li>
+                        </ul>
+                    </li>
+                    <li id="messages" class="active"><a href="messages.html"><span>Messages</span></a>
+                        <ul class="sub">
+                            <li><a href="messages-new.html">Compose</a></li>
+                            <li><a href="messages-inbox.html">Inbox</a></li>
+                            <li><a href="messages-sent.html">Sent Messages</a></li>
+                        </ul>
+                    </li>
+                    <li id="events"><a href="events.html"><span>Events</span></a>
+                       <ul class="sub">
+                            <li><a href="events-new.html">Compose</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- end of main nav -->
+                <form method="post" action="" class="top-search">
+                    <span class="fLeft"><input type="text" value="Keyword here" class="input-txt" /></span><span class="fLeft"><input type="submit" value="" class="input-btn" /></span>
+                </form><!-- end of search box -->
+                <div class="clr"></div>
+            </div><!-- end of header -->
+            <div class="clr"></div>
+            <div class="content-box-top">
+                <div class="colspan3">
+                    <h3 class="Myriad border4-btm section-heading">Messages Inbox<span class="fRight events-geo"><a href="messages.html">Messages</a> // <a href="messages-inbox.html" class="active">Inbox</a> // <a href="messages-sent.html">Sent</a> // <a href="messages-new.html">Compose</a></span></h3>
+                    <div class="msgs-action">
+                        <p class="fLeft"><strong>Select:</strong> <a href="#">All</a> | <a href="#">Read</a> | <a href="#">Unread</a> | <a href="#">Replied to</a></p>
+                        <p class="fRight"><img src="images/bin.png" alt="" /><a href="#"><strong>Delete</strong></a></p>
+                    </div>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/replied.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/unread.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html" class="thick">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/read.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/replied.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/unread.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html" class="thick">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/read.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/replied.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/unread.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html" class="thick">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/read.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/replied.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/unread.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html" class="thick">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/read.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/replied.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/unread.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html" class="thick">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <ul class="tbl4-msgs">
+                        <li class="tbl4-msgs-col1"><img src="images/read.png" alt="" /></li>
+                        <li class="tbl4-msgs-col2"><input type="checkbox" /></li>
+                        <li class="tbl4-msgs-col3">
+                            <a href="#" class="msgs-sender">Gary Merisier</a>
+                            <small class="msgs-timestamp">December 24, 2010 @ 7:00 PM</small>
+                            <span class="msgs-ctrls"><a href="#" title="Reply to"><img src="images/mail-reply.png" alt="Reply to" /></a><a href="#" title="Delete this"><img src="images/mail-delete.png" alt="Delete this" /></a><a href="#" title="Forward to"><img src="images/mail-forward.png" alt="Forward to" /></a></span>
+                        </li>
+                        <li class="tbl4-msgs-col4">
+                            <a href="messages-view.html">Email Subject</a><br />
+                            <p>Hi Gary, lorem ipsum dolor sit amet, consectetur adipiscing elit. vel aliquam nulla faucibus non...</p>
+                        </li>
+                    </ul>
+                    <div class="clr"></div><br />
+                    <p class="fRight more-txtlink"><a href="#"><strong>&laquo; Older Messages</strong></a></p>
+                </div><!-- end of colspan3 -->
+                <div class="col4">
+                    <h3 class="Myriad border4-btm section-heading">Global Trends</h3>
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="#"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="events-details.html"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="events-details.html"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="events-details.html"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="events-details.html"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="clr"></div>
+                    <h3 class="Myriad border4-btm section-heading">Select City</h3>
+                    <select name="Items" id="Items">
+                        <option value="option1" selected="selected">Select Your City</option>
+                    </select>
+                    <p><strong>or go to</strong></p>
+                    <ul class="list">
+                        <li><a href="events-geolocation.html">Boston</a></li>
+                        <li><a href="events-geolocation.html">Chicago</a></li>
+                        <li><a href="events-geolocation.html">Denver</a></li>
+                        <li><a href="events-geolocation.html">Los Angeles</a></li>
+                        <li><a href="events-geolocation.html">New Orleans</a></li>
+                        <li><a href="events-geolocation.html">New York</a></li>
+                        <li><a href="events-geolocation.html">Portland</a></li>
+                        <li><a href="events-geolocation.html">Sacramento</a></li>
+                        <li><a href="events-geolocation.html">San Diego</a></li>
+                        <li><a href="events-geolocation.html">Santa Fe</a></li>
+                        <li><a href="events-geolocation.html">San Francisco Bay</a></li>
+                        <li><a href="events-geolocation.html">Seattle</a></li>
+                        <li><a href="events-geolocation.html">Washington D.C.</a></li>
+                    </ul>
+                </div><!-- end of colspan3 -->
+                <div class="clr"></div>
+            </div><!-- end of content box -->
+            <div class="clr"></div>
+        </div><!-- end of wrapper -->
+        <div id="footer">
+            <div class="wrapper">
+                <p class="fLeft">
+                    <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Photos</a> | <a href="#">Entourage</a> | <a href="#">Messages</a> | <a href="#">Events</a> | <a href="#">Policy</a> | <a href="#">Terms Of Use</a><br /><br />
+                    <a href="http://validator.w3.org/check?uri=referer"><img src="images/w3c-valid.png" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>&nbsp;&nbsp;&copy; 2010 Dgenn.com
+                </p>
+                <p class="fRight"><img src="images/klooma_logo_grey.png" alt="" width="130" height="55" /></p>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div><!-- end of bg2 -->
+</div><!-- end of white bg -->
+</body>
+</html>

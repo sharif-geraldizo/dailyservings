@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DGenn Profile</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.5.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_700.font.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body id="tab2">
+<div id="white-bg">
+    <div class="bg2">
+        <div class="wrapper">
+            <div id="main-header">
+                <h1><a href="home.html" title="Home"><img src="images/dgenn_logo.png" alt="Dgenn" /></a></h1>
+                <!--div id="geo-location">
+                    <div class="geo-txt">
+                        <p>Welcome stranger to DGENN <span class="large clr-blk">Current Location</span></p>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="geo-btn">
+                        <a href="events.html"><img src="images/geolocation-btn.png" alt="" /></a>
+                    </div>
+                </div--><!-- geo-location -->
+                <ul id="main-nav">
+                    <li id="home"><a href="home.html"><span>Home</span></a></li>
+                    <li id="profile" class="active"><a href="profile.html"><span>Profile</span></a></li>
+                    <li id="entourage"><a href="entourage.html"><span>Entourage</span></a>
+                        <ul class="sub">
+                            <li><a href="entourage-new.html">New Group</a></li>
+                            <li><a href="entourage-mygroup.html">My Group</a></li>
+                        </ul>
+                    </li>
+                    <li id="messages"><a href="messages.html"><span>Messages</span></a>
+                        <ul class="sub">
+                            <li><a href="messages-new.html">Compose</a></li>
+                            <li><a href="messages-inbox.html">Inbox</a></li>
+                            <li><a href="messages-sent.html">Sent Messages</a></li>
+                        </ul>
+                    </li>
+                    <li id="events"><a href="events.html"><span>Events</span></a>
+                       <ul class="sub">
+                            <li><a href="events-new.html">Compose</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- end of main nav -->
+                <form method="post" action="" class="top-search">
+                    <span class="fLeft"><input type="text" value="Keyword here" class="input-txt" /></span><span class="fLeft"><input type="submit" value="" class="input-btn" /></span>
+                </form><!-- end of search box -->
+                <div class="clr"></div>
+            </div><!-- end of header -->
+            <div class="clr"></div>
+            <div class="content-box-top">
+                <div class="colspan3">
+                    <h3 class="Myriad border4-btm section-heading">Profile</h3>
+                    <div id="profile-box-wide">
+                        <div class="profile-pic"><img src="images/thumb3.png" alt="" /></div><!-- end of profile pic -->
+                        <div class="profile-status-wide">
+                            <p class="profile-name"><a href="#">Gary Merisier</a></p>
+                            <p class="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nibh justo. Donec hendrerit tortor eu nisl posuere vitae ullamcorper nunc congue.<small><span class="timestamp">2 hours ago.</span><span class="clr-status"><a href="#">Clear</a></span></small></p>
+                        </div><!-- end of profile status -->
+                    </div><!-- end of profile box -->
+                    <!--ul class="tabnav">
+                        <li class="tab1"><a href="#"><img src="images/photos.png" alt="" />&nbsp;&nbsp;Photos</a></li>
+                        <li class="tab2"><a href="#"><img src="images/music.png" alt="" />&nbsp;&nbsp;Music</a></li>
+                        <li class="tab3"><a href="#"><img src="images/map.png" alt="" />&nbsp;&nbsp;Videos</a></li>
+                    </ul--><!-- end of tabnav -->
+                    <ul class="tabnav">
+                        <li class="tab1"><a href="profile.html"><img src="images/activity.png" alt="" />&nbsp;&nbsp;Latest Activity</a></li>
+                        <li class="tab2"><a href="profile-info.html"><img src="images/notification.png" alt="" />&nbsp;&nbsp;Info</a></li>
+                        <li class="tab3"><a href="profile-entourage.html"><img src="images/group.png" alt="" />&nbsp;&nbsp;Entourage</a></li>
+                        <li class="tab4"><a href="profile-questions.html"><img src="images/comment-question.png" alt="" />&nbsp;&nbsp;Questions</a></li>
+                    </ul><!-- end of tabnav -->
+                    <div class="tab-box">
+                        <p class="border4-btm"><b>General Information</b></p>
+                        <ul class="info-tbl">
+                            <li class="info-tbl-col1">Name</li>
+                            <li class="info-tbl-col2">Lorem Ipsum</li>
+                            <li class="info-tbl-col1">Hometown</li>
+                            <li class="info-tbl-col2">Some place in town ipsum sit amet</li>
+                            <li class="info-tbl-col1">Gender</li>
+                            <li class="info-tbl-col2">
+                                <select class="input-txt2">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </li>
+                            <li class="info-tbl-col1">Birthday</li>
+                            <li class="info-tbl-col2">mm-dd-yyyy</li>
+                            <li class="info-tbl-col1">Sexual Preference</li>
+                            <li class="info-tbl-col2">
+                                <select class="input-txt2">
+                                    <option>Heterosexual</option>
+                                    <option>Bi sexual</option>
+                                    <option>Homosexual</option>
+                                    <option>Lesbianism</option>
+                                </select>
+                            </li>
+                            <li class="info-tbl-col1">Dgenn Quote</li>
+                            <li class="info-tbl-col2"><input type="text" class="input-txt3" /></li>
+                            <li class="info-tbl-col1">My fixes</li>
+                            <li class="info-tbl-col2">
+                                Click any of the fixes that apply to your lifestyle<br />
+                                <ul class="tbl-fixes">
+                                    <li><input type="checkbox" />&nbsp;Sex</li>
+                                    <li><input type="checkbox" />&nbsp;Drugs</li>
+                                    <li><input type="checkbox" />&nbsp;Booze</li>
+                                    <li><input type="checkbox" />&nbsp;Nightlife</li>
+                                    <li><input type="checkbox" />&nbsp;Gambling</li>
+                                    <li><input type="checkbox" />&nbsp;Sports</li>
+                                    <li><input type="checkbox" />&nbsp;Extreme Sports</li>
+                                    <li><input type="checkbox" />&nbsp;Bikers</li>
+                                    <li><input type="checkbox" />&nbsp;Car Enthusiast</li>
+                                    <li><input type="checkbox" />&nbsp;Music</li>
+                                    <li><input type="checkbox" />&nbsp;Fashion</li>
+                                    <li><input type="checkbox" />&nbsp;Art</li>
+                                    <li><input type="checkbox" />&nbsp;Academics</li>
+                                    <li><input type="checkbox" />&nbsp;Cooking &amp; Eating</li>
+                                    <li><input type="checkbox" />&nbsp;Gamer</li>
+                                    <li><input type="checkbox" />&nbsp;Animation</li>
+                                    <li><input type="checkbox" />&nbsp;Blogger</li>
+                                    <li><input type="checkbox" />&nbsp;Hacker</li>
+                                    <li><input type="checkbox" />&nbsp;Social Networking</li>
+                                    <li><input type="checkbox" />&nbsp;Politics</li>
+                                    <li><input type="checkbox" />&nbsp;Movies</li>
+                                    <li><input type="checkbox" />&nbsp;Traveling</li>
+                                    <li><input type="checkbox" />&nbsp;Literature</li>
+                                    <li><input type="checkbox" />&nbsp;Stripclubs</li>
+                                    <li><input type="checkbox" />&nbsp;Tattoos</li>
+                                </ul>
+                            </li>
+                            <li class="info-tbl-col1">Biography</li>
+                            <li class="info-tbl-col2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu iaculis tellus. Mauris nulla quam, tristique non congue a, sollicitudin in velit. Nulla ut est sapien. Aliquam erat volutpat. Etiam sed mi justo. Vestibulum velit urna, ultricies et laoreet et, feugiat eu odio. Etiam tristique sodales est eget rutrum. Nunc viverra, quam in luctus tincidunt, magna risus vulputate nisl, at laoreet neque libero vel augue. Maecenas vel purus eget arcu mattis hendrerit in pellentesque quam. Donec cursus feugiat leo ut euismod. In sit amet quam id quam suscipit pulvinar. Etiam sollicitudin, felis eu aliquam rhoncus, ipsum est semper dolor, a cursus elit nisl nec metus. In hac habitasse platea dictumst. Pellentesque eget urna faucibus erat feugiat ornare. Duis ut nunc non diam semper bibendum. Nulla facilisi. Phasellus suscipit ligula sed quam volutpat lacinia id vitae lorem. Sed elementum mauris sit amet dolor congue nec tincidunt ante tempor. Aenean bibendum venenatis nunc, vel accumsan turpis fermentum id.
+                            </li>
+                        </ul>
+                        <p class="border4-btm"><b>Account Information</b></p>
+                        <ul class="info-tbl">
+                            <li class="info-tbl-col1">Date Joined</li>
+                            <li class="info-tbl-col2">dd-mm-yyyy</li>
+                            <li class="info-tbl-col1">Username</li>
+                            <li class="info-tbl-col2">Lorem123</li>
+                            <li class="info-tbl-col1">Password</li>
+                            <li class="info-tbl-col2"><a href="#">Reset Password</a></li>
+                        </ul>
+                        <p class="border4-btm"><b>Media</b></p>
+                        <div class="profile-media-box">
+                            <div class="profile-media">
+                                <a href="#"><img src="images/thumb1.png" alt="" /></a><br />
+                                <a href="#"><b>Media Name</b></a><br />
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div><!-- end profile media -->
+                            <div class="profile-media">
+                                <a href="#"><img src="images/thumb1.png" alt="" /></a><br />
+                                <a href="#"><b>Media Name</b></a><br />
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div><!-- end profile media -->
+                            <div class="profile-media">
+                                <a href="#"><img src="images/thumb1.png" alt="" /></a><br />
+                                <a href="#"><b>Media Name</b></a><br />
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div><!-- end profile media -->
+                            <div class="profile-media">
+                                <a href="#"><img src="images/thumb1.png" alt="" /></a><br />
+                                <a href="#"><b>Media Name</b></a><br />
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div><!-- end profile media -->
+                            <div class="profile-media">
+                                <a href="#"><img src="images/thumb1.png" alt="" /></a><br />
+                                <a href="#"><b>Media Name</b></a><br />
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div><!-- end profile media -->
+                            <div class="profile-media">
+                                <a href="#"><img src="images/thumb1.png" alt="" /></a><br />
+                                <a href="#"><b>Media Name</b></a><br />
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div><!-- end profile media -->
+                        </div><!-- end profile media box -->
+                        <div class="clr"></div>
+                        <!--p class="fRight more-txtlink"><a href="#"><strong>&laquo; Older Activities</strong></a></p-->
+                    </div><!-- end of tab-box -->
+                </div><!-- end of colspan3 -->
+                <div class="col4">
+                    <h3 class="Myriad border4-btm section-heading">Located In</h3>
+                    <div class="side-map"><img src="images/map-side.png" alt="" /></div>
+                    <h3 class="Myriad border4-btm section-heading">Suggested Degenerate</h3>
+                        <div class="dgenn-narrow-box">
+                            <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb2.png" alt="" width="45" height="45" /></a></div>
+                            <div class="dgenn-narrow-text2">
+                                <h6><a href="#">Friend Name</a></h6>
+                                <small>You have <a href="#">12 media</a> in common</small>
+                                <p>Davao City, Philippines</p>
+                                <div class="isButton100-sm">+<a href="#">Add to group</a></div>
+                            </div>
+                        </div><!-- end of dgenn narrow box -->
+                    <div class="clr"></div>
+                    <h3 class="Myriad border4-btm section-heading">Events</h3>
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="#"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="dgenn-narrow-box">
+                        <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                        <div class="dgenn-narrow-text">
+                            <h6><a href="events-details.html">Events</a></h6>
+                            <small><a href="events-details.html"><img src="images/comment.png" alt="" /> 20 Comments</a></small>
+                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </div><!-- end of dgenn narrow box -->
+                    <div class="clr"></div>
+                    <h3 class="Myriad border4-btm section-heading">Media</h3>
+                        <div class="dgenn-narrow-box">
+                            <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                            <div class="dgenn-narrow-text">
+                                <h6><a href="#">Media Name</a></h6>
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div>
+                        </div><!-- end of dgenn narrow box -->
+                        <div class="dgenn-narrow-box">
+                            <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                            <div class="dgenn-narrow-text">
+                                <h6><a href="#">Media Name</a></h6>
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div>
+                        </div><!-- end of dgenn narrow box -->
+                        <div class="dgenn-narrow-box">
+                            <div class="dgenn-narrow-thumb"><a href="#"><img src="images/thumb1.png" alt="" width="80" height="45" /></a></div>
+                            <div class="dgenn-narrow-text">
+                                <h6><a href="#">Media Name</a></h6>
+                                <small>By <a href="#">Dgenn</a></small>
+                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <img src="images/rating.png" alt="" />
+                            </div>
+                        </div><!-- end of dgenn narrow box -->
+                    <div class="clr"></div>
+                </div><!-- end of colspan3 -->
+                <div class="clr"></div>
+            </div><!-- end of content box -->
+            <div class="clr"></div>
+        </div><!-- end of wrapper -->
+        <div id="footer">
+            <div class="wrapper">
+                <p class="fLeft">
+                    <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Friends</a> | <a href="#">Messages</a> | <a href="#">Events</a> | <a href="#">Policy</a> | <a href="#">Terms Of Use</a><br /><br />
+                    <a href="http://validator.w3.org/check?uri=referer"><img src="images/w3c-valid.png" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>&nbsp;&nbsp;&copy; 2010 Dgenn.com
+                </p>
+                <p class="fRight"><img src="images/klooma_logo_grey.png" alt="" width="130" height="55" /></p>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div><!-- end of bg2 -->
+</div><!-- end of white bg -->
+</body>
+</html>
